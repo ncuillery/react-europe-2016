@@ -37,6 +37,24 @@ Certains sont spécifiques à l'utilisateur (reducer, selector) et d'autres sont
 [redux-loop](https://github.com/raisemarketplace/redux-loop) et bien sûr
 [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension))
 
+En conclusion, les contraintes et contrats sont indissociables des fonctionnalités et APIs, et doivent être au moins aussi bien
+documentés et designés. Il faut rendre les contrats, points d'extension de la librairie, composables pour profiter de tous les
+développements de la communauté. Il faut prendre du temps pour expliquer et mettre en avant les concepts et les possibilités.
+
+En toute modestie, Dan souligne que Redux n'a pas toute la hype qu'il mérite et qu'il ne faut pas hésiter à sortir des sentiers
+battus (il y a un slide montrant une appel direct à un reducer dans un composant...) voire à ne **pas** utiliser Redux du tout
+suivant notre cas d'utilisation et voir du coté de [Relay](https://github.com/facebook/relay),
+[RxJS](https://github.com/ReactiveX/rxjs), [MobX](https://github.com/mobxjs/mobx), 
+[Cerebral](https://github.com/cerebral/cerebral).
+
+Le futur de Redux ne vient pas de Redux lui-même mais de son écosystème. Il manque une cohésion dans l'écosystème pour que Redux
+devienne, et c'est là l'objectif, une **architecture d'application immutable**, un concept très inspirant pour Dan, que Lee Byron 
+a évoqué dans son [talk à Render 2016](https://vimeo.com/166790294).
+
+### Mon avis
+Excellente keynote pour démarrer la conférence, le fond est intéressant. On comprend beauçoup de choses, pourquoi la [documentation
+de Redux](http://redux.js.org/) est si abondante (parfois "trop" si on recherche une simple information), pourquoi Dan a fait un énorme [cours en ligne](https://egghead.io/courses/getting-started-with-redux) gratuit sur Redux (un [2ème](https://egghead.io/courses/building-react-applications-with-idiomatic-redux) a d'ailleurs été annoncé et publié en direct lors de la keynote !)
+
 - Slides : http://gaearon.github.io/the-redux-journey/
 - Vidéo : https://www.youtube.com/watch?v=uvAXVMwHJXU
 
