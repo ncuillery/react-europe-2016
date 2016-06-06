@@ -11,15 +11,15 @@ qui a conduit Dan à créer Redux en préparant un talk sur [react-hot-loader](h
 pour la précédente édition de React Europe.
 
 Aujourd'hui chez Facebook, Dan annonce le _de facto_ premier anniversaire de Redux et revient sur son succès (3 millions
-de téléchargement sur NPM, [Twitter Mobile](https://mobile.twitter.com/home) qui l'utilise) et les raisons qui ont amené
+de téléchargement sur NPM, utilisation dans [Twitter Mobile](https://mobile.twitter.com/home)) et les raisons qui ont amené
 Redux à devenir l'implémentation Flux de référence.
 
 On pense souvent que l'utilité et la qualité d'une librairie se résume à ses fonctionnalités et son API, mais dans le cas
-de Redux, il s'agit d'autre chose car il n'y a basiquement pas de **fonctionnalités**, Redux se résume à un simple _change
-handler_ réagissant à un événement unique et renvoyant une valeur (le state). L'intérêt de Redux est ailleurs: dans les
+de Redux, il s'agit d'autre chose car il n'y a basiquement pas de fonctionnalités, Redux se résume à un simple _change
+handler_ réagissant à un événement unique et renvoyant une valeur (le state). L'intérêt de Redux est ailleurs : dans les
 contraintes et les contrats d'interface qu'il impose.
 
-Ce sont les contraintes de Redux qui font sa force, notamment en imposant un process de debug classique, et en permettant
+Ce sont les contraintes de Redux qui font sa force, notamment en imposant un process de debug classique et en permettant
 facilement la sauvegarde / restauration de l'état (rendu coté serveur, enregistrement de la session utilisateur), les
 _optimistic updates_, le _undo / redo_, etc.
 
@@ -41,7 +41,7 @@ En conclusion, les contraintes et contrats sont indissociables des fonctionnalit
 documentés et designés. Il faut rendre les contrats, points d'extension de la librairie, composables pour profiter de tous les
 développements de la communauté. Il faut prendre du temps pour expliquer et mettre en avant les concepts et les possibilités.
 
-En toute modestie, Dan souligne que Redux n'a pas toute la hype qu'il mérite et qu'il ne faut pas hésiter à sortir des sentiers
+En toute modestie, Dan souligne que Redux a bien plus de hype qu'il n'en mérite et qu'il ne faut pas hésiter à sortir des sentiers
 battus (il y a un slide montrant une appel direct à un reducer dans un composant...) voire à ne **pas** utiliser Redux du tout
 suivant notre cas d'utilisation et voir du coté de [Relay](https://github.com/facebook/relay),
 [RxJS](https://github.com/ReactiveX/rxjs), [MobX](https://github.com/mobxjs/mobx), 
@@ -53,10 +53,14 @@ a évoqué dans son [talk à Render 2016](https://vimeo.com/166790294).
 
 ### Mon avis
 Excellente keynote pour démarrer la conférence, le fond est intéressant. On comprend beauçoup de choses, pourquoi la [documentation
-de Redux](http://redux.js.org/) est si abondante (parfois "trop" si on recherche une simple information), pourquoi Dan a fait un énorme [cours en ligne](https://egghead.io/courses/getting-started-with-redux) gratuit sur Redux (un [2ème](https://egghead.io/courses/building-react-applications-with-idiomatic-redux) a d'ailleurs été annoncé et publié en direct lors de la keynote !)
+de Redux](http://redux.js.org/) est si abondante (parfois "trop" si on recherche une simple information), pourquoi Dan a fait un
+énorme [cours en ligne](https://egghead.io/courses/getting-started-with-redux) gratuit sur Redux (un
+[2ème](https://egghead.io/courses/building-react-applications-with-idiomatic-redux) a d'ailleurs été annoncé et publié en direct
+lors de la keynote !)
 
 - Slides : http://gaearon.github.io/the-redux-journey/
 - Vidéo : https://www.youtube.com/watch?v=uvAXVMwHJXU
+
 
 ## Native Navigation for Every Platform
 
