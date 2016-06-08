@@ -105,7 +105,23 @@ des différents sous-graphes.
 
 ### Conclusion
 
-Avoir une représentation aussi fine de notre code autorisent d'autres usages au delà de la détection d'erreur. On peut imaginer faire du [taint analysis](https://en.wikipedia.org/wiki/Taint_checking) qui consiste à mesurer la propagation d'une donnée sensible (credentials ou requête SQL par exemple) au sein d'une application. Le _Flow graph_ permet de visualiser l'étendue d'une donnée sensible, étendue qu'on peut s'efforcer ensuite de réduire pour augmenter la sécurité de l'application).
+Avoir une représentation aussi fine de notre code autorisent d'autres usages au delà de la détection d'erreur. On peut 
+imaginer faire du [taint analysis](https://en.wikipedia.org/wiki/Taint_checking) qui consiste à mesurer la propagation d'une 
+donnée sensible (credentials ou requête SQL par exemple) au sein d'une application. Le _Flow graph_ permet de visualiser 
+l'étendue d'une donnée sensible, étendue qu'on peut s'efforcer ensuite de réduire pour augmenter la sécurité de l'application).
+
+Pour finir, le _Flow graph_ peut servir à la détection de code mort par 
+[tree shaking](http://blog.sethladd.com/2013/01/minification-is-not-enough-you-need.html) (comme commence à le faire Webpack), 
+encore une fois à un niveau très fin (à l'instruction près) : il est facile à partir du graphe, de trouver les morceaux 
+flottants, non reliés au reste de l'application. Il s'agit de code mort, potentiellement partagé entre plusieurs fichiers,
+indétectable par la plupart des outils / IDE.
+
+### Mon avis
+
+Ce talk démystifie complètement le fonctionnement de Flow. On constate qu'il peut fonctionner sans annotation sur du code
+existant. Qualifier Flow de _type checker_ est finalement assez réducteur : c'est un vrai outil d'analyse et de détection de
+bugs. Le talk donne envie d'essayer. A noter toutefois que les `.flowconfig` que l'on peut trouver sur Github peuvent parfois 
+faire peur (celui de [React Native](https://github.com/facebook/react-native/blob/master/.flowconfig) par exemple).
 
 
 
