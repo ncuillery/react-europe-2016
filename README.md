@@ -67,7 +67,7 @@
 ## Falcor: One Model Everywhere
 
 Les organisateurs ont fait le pari audacieux d'inviter Jafar Husain, lead dev chez Netflix pour parler de Falcor, un concurrent du
-très-facebookien GraphQL.
+très-facebookien GraphQL. Comme GraphQL chez Facebook, Falcor est né d'un besoin interne chez Netflix: en représentant le modèle de Netflix (Séries, Acteurs, Episodes, etc.) sous forme de graphe, on s'aperçoit que les différentes version de Netflix (Web / Tablette / Téléphone / TV) requièrent chacune des portions différentes du modèle, chaque version n'a pas besoin des mêmes données. 
 
 
 
