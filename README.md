@@ -66,6 +66,9 @@
 
 ## Falcor: One Model Everywhere
 
+Les organisateurs ont fait le pari audacieux d'inviter Jafar Husain, lead dev chez Netflix pour parler de Falcor, un concurrent du
+très-facebookien GraphQL.
+
 
 
 ## Building li.st for Android with Exponent and React Native
