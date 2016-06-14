@@ -75,16 +75,16 @@ données. Dès lors, il est difficile de fournir un _end point_ unique (en REST 
 Le rôle de Falcor est d'exposer le modèle de donnée complet en JSON. Chaque client va alors requêter le fragment de modèle qui
 l'intéresse, recevoir la réponse et la cacher.
 
-### Analogie avec GraphQL
+### Différences avec GraphQL
 
 Falcor est comparable à GraphQL dans le sens où ils répondent tous les deux au même problème et sont inscrit dans la mouvance 
 "Demand driven architecture". Les avantages de l'un et de l'autre font qu'il y aura toujours un framework de
 prédilection pour une architecture donnée.
 
-L'avantage premier de Falcor, puisqu'on parle de lui, est son approche simplifiée. Il y a moins de concepts (schéma, requêtage, 
-...). L'empreinte est moins forte et la mise en place sur une application existante est plus aisée. Pour illustrer ceci, Jeff
-interroge directement un modèle Falcor via un simple _path_ JavaScript: `genrelists[0].titles[0].name` alors qu'en GraphQL il 
-aurait d'abord fallu requêter le schéma puis effectuer la requête qui aurait ressemblée à ça: 
+La particularité principale de Falcor, puisqu'on parle de lui, est son approche simplifiée. Il y a moins de concepts (schéma,
+requêtage, ...). L'empreinte est moins forte et la mise en place sur une application existante est plus aisée. Pour illustrer 
+ceci, Jeff interroge directement un modèle Falcor via un simple _path_ JavaScript: `genrelists[0].titles[0].name` alors qu'en 
+GraphQL il aurait d'abord fallu requêter le schéma puis effectuer la requête qui aurait ressemblée à ça: 
 `{genrelists(first: 1): {titles(first: 1): {name}}}`.
 
 Nous nous éloignons légèrement de la syntaxe JavaScript si on inclue des _ranges_ d'index et de propriétés dans les paths, 
