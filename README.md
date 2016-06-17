@@ -121,7 +121,8 @@ indétectable par la plupart des outils / IDE.
 Ce talk démystifie complètement le fonctionnement de Flow. On constate qu'il peut fonctionner sans annotation sur du code
 existant. Qualifier Flow de _type checker_ est finalement assez réducteur : c'est un vrai outil d'analyse et de détection de
 bugs. Le talk donne envie d'essayer. A noter toutefois que les `.flowconfig` que l'on peut trouver sur Github peuvent parfois 
-faire peur (celui de [React Native](https://github.com/facebook/react-native/blob/master/.flowconfig) par exemple).
+faire peur (celui de 
+[React Native](https://github.com/facebook/react-native/blob/df46891dfee6a0e6b6d80a92b9bde8fbe9865a3a/.flowconfig) par exemple).
 
 
 
