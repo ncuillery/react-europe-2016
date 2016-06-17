@@ -144,11 +144,12 @@ Ce principe peut être généralisé: si la requête peut être généré avec u
 N maps imbriquées. Par exemple, si une requête à 3 parties dynamiques, le modèle aura conceptuellement une map de maps de maps avec 
 toutes les valeurs possibles !
 
-### Conclusion
+### Mon avis
 
-
-
-
+Je me méfie toujours des comparatifs entre technos, mais ici Jafar ne tombe jamais dans le piège du troll et son analyse est
+argumentée (à défaut d'être objective). Le talk est extrêmement bien rodé (démo vidéo timeboxée avec le temps de parole) et le 
+discours fait mouche. Au final, la simplicité, les cas d'usage, la mise en place graduelle sont autant de raisons qui m'ont donné
+envie de tester Falcor.
 
 
 
