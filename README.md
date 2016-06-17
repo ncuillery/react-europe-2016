@@ -143,8 +143,8 @@ rappelons le) une map avec toutes les recherches possibles de l'utilisateur:
 ```
 
 Ce principe peut être généralisé: si la requête peut être généré avec une fonction pure à N arguments, le modèle va alors contenir 
-N maps imbriquées. Par exemple, si une requête à 3 parties dynamiques, le modèle aura conceptuellement une map de maps de maps avec 
-toutes les valeurs possibles !
+N maps imbriquées. Par exemple, si une requête à 3 parties dynamiques, le modèle aura conceptuellement une map de maps de maps 
+avec toutes les valeurs possibles !
 
 ### Mon avis
 
