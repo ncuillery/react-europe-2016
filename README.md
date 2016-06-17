@@ -124,11 +124,13 @@ supérieures mais l'implémentation est plus compliquée puisque toutes ces poss
 serveur. De plus, en apportant de la puissance lors du requêtage, il faut également se prémunir des opérations malencontreuses 
 (tri ou filtrage coûteux par exemple) en implémentant des garde-fous, etc.
 
-Pour résumer ce point, disons que GraphQL sera plus adapté à des requêtes fortement dynamiques saisies en partie ou totalement par 
-l'utilisateur comme par exemple la [recherche avancée Github](https://github.com/search/advanced). Falcor conviendra mieux à des applications où les requêtes sont statiques ou plus prévisibles.
+Pour résumer ce point, disons que GraphQL sera plus adapté à des requêtes fortement dynamiques saisies en partie ou totalement 
+par l'utilisateur comme par exemple la [recherche avancée Github](https://github.com/search/advanced). Falcor conviendra mieux 
+à des applications où les requêtes sont statiques ou plus prévisibles.
 
 A ce sujet, comment faire pour effectuer des requêtes dynamiques avec Falcor, par exemple la recherche dans Netflix, quand on a 
-que des paths JavaScript à disposition ? Tout simplement en incorporant dans le modèle JSON (qui est une vue de l'esprit rappelons le) une map avec toutes les recherches possibles de l'utilisateur:
+que des paths JavaScript à disposition ? Tout simplement en incorporant dans le modèle JSON (qui est une vue de l'esprit 
+rappelons le) une map avec toutes les recherches possibles de l'utilisateur:
 
 ```javascript
 {
