@@ -38,6 +38,12 @@
 
 ## On the Spectrum of Abstraction
 
+Cette année, pas de belles démmos, d'interfaces pimpantes pour Cheng Lou, le créateur de
+[react-motion](https://github.com/chenglou/react-motion), le thème abordé est plus personnel: en tant que développeur JavaScript
+on est amené à faire des choix en matière de librairies et frameworks. Cheng a mené une réflexion basée sur son expérience pour
+comprendre ce qui le pousse à adopter tel ou tel librairie / framework et ainsi effectuer les bons choix de manière prédictive
+sans laisser de place à une sorte d'"instinct du développeur".
+
 
 
 ## React Redux Analytics
