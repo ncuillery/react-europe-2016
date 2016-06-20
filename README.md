@@ -44,6 +44,19 @@ on est amené à faire des choix en matière de librairies et frameworks. Cheng 
 comprendre ce qui le pousse à adopter tel ou tel librairie / framework et ainsi effectuer les bons choix de manière prédictive
 sans laisser de place à une sorte d'"instinct du développeur".
 
+### Modélisation
+
+Imaginons un arbre descendant dans lequel les noeuds sont des couches d'abstraction, plus le noeud est haut dans l'arbre, plus le
+niveau d'abstraction est élevé. Les feuilles de l'arbre sont des use-cases concrets, couvert par une abstraction de 1er niveau 
+(le noeud parent aux feuilles). Nous développeurs, utilisons des abstractions pour produire quelque chose d'utile. Par exemple, 
+React n'est pas utilisable en tant que tel, c'est une abstraction donnant du pouvoir aux développeurs pour produire quelque chose
+d'utile (du markup par exemple). Les feuilles vertes sont les use-cases "utiles", c'est la représentation de notre produit, par
+opposition aux feuilles blanches qui sont les use-cases fournis par l'abstraction mais qui ne nous intéresse pas pour notre 
+produit.
+
+Chose importante, chaque segment de l'arbre a forcément un coût, c'est le coût d'apprentissage de l'abstraction. Le choix d'une 
+stack technique peut alors se résumer à la question: Quelles abstractions choisir pour couvrir tous les besoins de notre 
+application (feuilles vertes) avec un minimum de coût.
 
 
 ## React Redux Analytics
