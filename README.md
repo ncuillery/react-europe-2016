@@ -55,8 +55,32 @@ opposition aux feuilles blanches qui sont les use-cases fournis par l'abstractio
 produit.
 
 Chose importante, chaque segment de l'arbre a forcément un coût, c'est le coût d'apprentissage de l'abstraction. Le choix d'une 
-stack technique peut alors se résumer à la question: Quelles abstractions choisir pour couvrir tous les besoins de notre 
-application (feuilles vertes) avec un minimum de coût.
+stack technique peut alors se résumer à la question: quelles abstractions choisir pour couvrir tous les besoins de notre 
+application (feuilles vertes) avec un minimum de coût et en embarquant le minimum de noeud ?
+
+### Librairie vs framework
+
+Mieux vaut-il des librairies ou un framework ? C'est une question souvent débattue, Cheng cite le 
+[principle of least power](https://en.wikipedia.org/wiki/Rule_of_least_power) qui plaide en faveur des librairies mais les 
+frameworks, eux, revêtent une dimension sociale, ils sont capables de fédérer une communauté et donc de créer de l'entraide. 
+
+Les frameworks correspondent aux noeuds situés très haut dans l'arbre, les librairies occupent les niveaux intermédiaires et les
+feuilles peuvent être assimilé aux "micro-modules" qui ne font qu'une seule chose mais qui le font bien
+([left-pad](https://www.npmjs.com/package/left-pad) par exemple :trollface:). On en trouve à foison sur NPM et c'est également
+un problème (d'où l'intérêt des abstractions).
+
+Le choix (micro-modules / librairies / frameworks) est important car selon l'expérience de Cheng, beaucoup de problèmes en
+programmation proviennent d'un mauvais choix d'abstraction.
+
+Un mauvais choix de niveau d'abstraction, que ce soit la création d'un projet open-source, d'un produit de startup, etc., 
+entraîne une perte d'intérêt. Si le produit est trop concret (trop bas dans l'arbre), il y a le risque qu'il ne corresponde pas 
+aux besoins (feuilles vertes non couvertes). A contrario, s'il est trop abstrait (trop haut dans l'arbre), il va décourager les
+utilisateurs potentiels à cause du coût trop important.
+
+Une autre conséquence d'un produit trop abstrait est l'éloignement vis à vis de ses propriétés intrinsèques. On risque de perdre 
+de vue nos feuilles vertes et obtenir un produit qui ne correspond plus à l'idée de départ.
+
+
 
 
 ## React Redux Analytics
